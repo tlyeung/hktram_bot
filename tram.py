@@ -121,8 +121,7 @@ def tramstation(bot, update, lang, dir):
             for row in reader:
                 if dir == row['Traveling Direction']:
                     keyboard.append([InlineKeyboardButton(text= row[lang],
-                                     callback_data=",".join(
-									 [row['Stops Code'],row[lang], lang]) )])
+                                     callback_data=",".join([row['Stops Code'],row[lang], lang]))])
         except KeyError: 
             print( 'ERROR: key not found!')
     keyboard.append([InlineKeyboardButton(text = "Close", 
@@ -140,8 +139,8 @@ def distance_from_lat_lon_to_m(lat1, lon1, lat2, lon2):
     R = 6371.0
     dLat = float(lat2) * math.pi / 180.0 - float(lat1) * math.pi / 180.0
     dLon = float(lon2) * math.pi / 180.0 - float(lon1) * math.pi / 180.0
-    a = math.sin(float(dLat) / 2.0) * math.sin(float(dLat) / 2.0) + math.cos(float(lat1) * math.pi / 180.0) * math.cos(
-        float(lat2) * math.pi / 180.0) * math.sin(float(dLon) / 2.0) * math.sin(float(dLon) / 2.0);
+    a = math.sin(float(dLat) / 2.0) * math.sin(float(dLat) / 2.0) + math.cos(float(lat1) * math.pi / 180.0) * \
+	    math.cos(float(lat2) * math.pi / 180.0) * math.sin(float(dLon) / 2.0) * math.sin(float(dLon) / 2.0);
     c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
     d = R * c
     return str(round(d * 1000))
@@ -185,7 +184,7 @@ def sendlocation(bot, update, dir):
 def main():
     
     # Create the Updater and pass it your bot's token.
-    updater = Updater("407172807:AAFvKq5g18qiflgvQY7fCfd5CXQce3ADaGA")
+    updater = Updater(TOKEN)
 
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
@@ -195,7 +194,6 @@ def main():
     dp.add_handler(CommandHandler("help", help))
     dp.add_handler(MessageHandler(Filters.text, search))
     dp.add_handler(MessageHandler(Filters.location, location))
-    #dp.add_handler(InlineQueryHandler(inlinequery))
     dp.add_handler(CallbackQueryHandler(callback))
 
     # log all errors
