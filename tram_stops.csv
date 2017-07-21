@@ -1,0 +1,129 @@
+Traveling Direction,Stops Code,Stops Name in Chinese,Stops Name
+Westbound,SKT,筲箕灣總站,Shau Kei Wan Terminus
+Westbound,02W,柴灣道,Chai Wan Road
+Westbound,04W,新成街,Sun Sing Street
+Westbound,06W,海富街,Hoi Foo Street
+Westbound,08W,聖十字徑,Holy Cross Path
+Westbound,10W,太康街,Tai Hong Street
+Westbound,12W,太古城道,Tai Koo Shing Road
+Westbound,14W,康山,Kornhill
+Westbound,16W,船塢里,Shipyard Lane
+Westbound,18W,柏架山道,Mount Parker Road
+Westbound,20W,芬尼街,Finnie Street
+Westbound,22W,渣華道,Java Road
+Westbound,24W,健康東街,Healthy Street East
+Westbound,26W,健康西街,Healthy Street West
+Westbound,28W,電照街,Tin Chiu Street
+Westbound,30W,書局街,Shu Kuk Street
+Westbound,NPT,北角總站,North Point Terminus
+Westbound,32W,北角道,North Point Road
+Westbound,34W,炮台山,Fortress Hill
+Westbound,36W,木星街,Jupiter Street
+Westbound,38W,琉璃街,Lau Li Street
+Westbound,40W,留仙街,Lau Sin Street
+Westbound,42W,維多利亞公園,Victoria Park
+Westbound,44W,信德街,Shelter Street
+Westbound,CBT,銅鑼灣總站,Causeway Bay Terminus
+Westbound,46W,邊寧頓街,Pennington Street
+Westbound,48W,百德新街,Paterson Street
+Westbound,105,富明街,Foo Ming Street
+Westbound,106,禮頓道,Leighton Road
+Westbound,107,樂活道,Broadwood Road
+Westbound,108,黃泥涌道,Wong Nai Chung Road
+Westbound,HVT_K,跑馬地總站,Happy Valley Terminus
+Westbound,109,天主教墳場,Colonial Cemetery
+Westbound,110,皇后大道東,Queen's Road East
+Westbound,111,摩利臣山道,Morrison Hill Road
+Westbound,112,天樂里,Tin Lok Lane
+Westbound,50W,堅拿道西,Canal Road West
+Westbound,52W,杜老誌道,Tonnochy Road
+Westbound,54W,巴路士街,Burrows Street
+Westbound,56W,柯布連道,O'Brien Road
+Westbound,58W,汕頭街,Swatow Street
+Westbound,60W,機利臣街,Gresson Street
+Westbound,62W,軍器廠街,Arsenal Street
+Westbound,64W,金鐘港鐵站,Admiralty MTR Station
+Westbound,66W,紅棉道,Cotton Tree Drive
+Westbound,68W,銀行街,Bank Street
+Westbound,70W,畢打街,Pedder Street
+Westbound,72W,砵甸乍街,Pottinger Street
+Westbound,74W,機利文街,Gilman Street
+Westbound,76W,文華里,Man Wah Lane
+Westbound,WM,上環 (西港城) 總站,Western Market Terminus
+Westbound,78W,港澳碼頭,Macau Ferry Terminal
+Westbound,80W,干諾道西,Connaught Road West
+Westbound,82W,修打蘭街,Sutherland Street
+Westbound,84W,東邊街,Eastern Street
+Westbound,86W,西邊街,Western Street
+Westbound,88W,水街,Water Street
+Westbound,90W,屈地街,Whitty Street
+Westbound,92W,山道,Hill Road
+Westbound,94W,屈地街電車廠,Whitty Street Depot
+Westbound,96W,皇后大道西,Queen's Road West
+Westbound,98W,堅尼地城海傍,Kennedy Town Praya
+Westbound,100W,山市街,Sands Street
+Westbound,102W,士美菲路,Smithfield
+Westbound,104W,爹核士街,Davis Street
+Eastbound,101E,柴灣道,Chai Wan Road
+Eastbound,99E,南康街,Nam Hong Street
+Eastbound,97E,西灣河電車廠,Sai Wan Ho Depot
+Eastbound,95E,海富街,Hoi Foo Street
+Eastbound,93E,太安街,Tai On Street
+Eastbound,91E,太康街,Tai Hong Street
+Eastbound,89E,太古城道,Tai Koo Shing Road
+Eastbound,87E,康山,Kornhill
+Eastbound,85E,船塢里,Shipyard Lane
+Eastbound,83E,柏架山道,Mount Parker Road
+Eastbound,81E,芬尼街,Finnie Street
+Eastbound,79E,渣華道,Java Road
+Eastbound,77E,健康東街,Healthy Street East
+Eastbound,75E,健康西街,Healthy Street West
+Eastbound,73E,電照街,Tin Chiu Street
+Eastbound,71E,書局街,Shu Kuk Street
+Eastbound,69E,北角道,North Point Road
+Eastbound,67E,春秧街,Chun Yeung Street
+Eastbound,65E,炮台山,Fortress Hill
+Eastbound,63E,木星街,Jupiter Street
+Eastbound,61E,永興街,Wing Hing Street
+Eastbound,59E,興發街,Hing Fat Street
+Eastbound,57E,維多利亞公園,Victoria Park
+Eastbound,55E,信德街,Shelter Street
+Eastbound,53E,百德新街,Paterson Street
+Eastbound,51E,波斯富街,Percival Street
+Eastbound,105,富明街,Foo Ming Street
+Eastbound,106,禮頓道,Leighton Road
+Eastbound,107,樂活道,Broadwood Road
+Eastbound,108,黃泥涌道,Wong Nai Chung Road
+Eastbound,HVT_B,跑馬地總站,Happy Valley Terminus
+Eastbound,109,天主教墳場,Colonial Cemetery
+Eastbound,110,皇后大道東,Queen's Road East
+Eastbound,111,摩利臣山道,Morrison Hill Road
+Eastbound,112,天樂里,Tin Lok Lane
+Eastbound,49E,堅拿道西,Canal Road West
+Eastbound,47E,杜老誌道,Tonnochy Road
+Eastbound,45E,菲林明道,Fleming Road
+Eastbound,43E,柯布連道,O'Brien Road
+Eastbound,41E,盧押道,Luard Road
+Eastbound,39E,分域街,Fenwick Street
+Eastbound,37E,軍器廠街,Arsenal Street
+Eastbound,35E,金鐘港鐵站,Admiralty MTR Station
+Eastbound,33E,美利道,Murray Road
+Eastbound,31E,銀行街,Bank Street
+Eastbound,29E,雪廠街,Ice House Street
+Eastbound,27E,畢打街,Pedder Street
+Eastbound,25E,租庇利街,Jubilee Street
+Eastbound,23E,機利文街,Gilman Street
+Eastbound,21E,禧利街,Hillier Street
+Eastbound,WMT,上環 (西港城) 總站,Western Market Terminus
+Eastbound,19E,港澳碼頭,Macau Ferry Terminal
+Eastbound,17E,皇后街,Queen Street
+Eastbound,15E,東邊街,Eastern Street
+Eastbound,13E,西邊街,Western Street
+Eastbound,11E,水街,Water Street
+Eastbound,09E,屈地街,Whitty Street
+Eastbound,WST,石塘咀總站,Shek Tong Tsui Terminus
+Eastbound,07E,山道,Hill Road
+Eastbound,05E,皇后大道西,Queen's Road West
+Eastbound,03E,荷蘭街,Holland Street
+Eastbound,01E,北街,North Street
+Eastbound,KTT,堅尼地城總站,Kennedy Town Terminus
