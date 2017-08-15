@@ -56,7 +56,11 @@ def start(bot, update):
 	
 @run_async
 def help(bot, update):
-    update.message.reply_text('Help!')
+    text = "Find your nearest tram stations and know the next tram arrivals for Hong Kong Tramways.\n\
+		/start: check arrivals and get route map\n\
+		/help: get help\n\
+		send location to the bot: return nearest tram station of that location"
+    update.message.reply_text(text)
     	
 		
 @run_async
