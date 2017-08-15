@@ -41,10 +41,18 @@ def start(bot, update):
     keyboard.append([InlineKeyboardButton(text = "Westbound", callback_data='westbound')])
     keyboard.append([InlineKeyboardButton(text = "東行", callback_data='chinese eastbound')])
     keyboard.append([InlineKeyboardButton(text = "西行", callback_data='chinese westbound')])
+    keyboard.append([InlineKeyboardButton(text = "路線地圖/Route map", callback_data='map')])
     keyboard.append([InlineKeyboardButton(text = "Close", callback_data='close')])
     reply_markup = InlineKeyboardMarkup(keyboard)
-    update.message.reply_text('Traveling Direction:\n行駛方向:', reply_markup=reply_markup)
-	
+    if(update.message):	
+        update.message.reply_text('Traveling Direction:\n行駛方向:', reply_markup=reply_markup)
+    else:
+        bot.editMessageText(text='Traveling Direction:\n行駛方向:',
+			chat_id=update.callback_query.message.chat_id,
+			message_id=update.callback_query.message.message_id,
+			reply_markup=reply_markup,
+			parse_mode="HTML")			
+		
 	
 @run_async
 def help(bot, update):
@@ -65,12 +73,16 @@ def error(bot, update, error):
 def callback(bot, update):
     query = update.callback_query
     try:
-        if ("close" in query.data):
+        if "map" in query.data:
+            bot.send_photo(chat_id=update.callback_query.message.chat_id,photo='https://hktramways.com/images/googleMap/routeMapEB.jpg')	
+        if ("close" in query.data or "map" in query.data):
             bot.editMessageText(text="Ding Ding!",
 			                    chat_id=query.message.chat_id,
 			                    message_id=query.message.message_id)
         elif "eastloc" in query.data or "westloc" in query.data:
             sendlocation(bot,update, dir=query.data)
+        elif "start" in query.data:
+            start(bot, update)   			
         elif "eastbound" in query.data or "westbound" in query.data:
             tramstation(bot, update,
 			            lang='Stops Name in Chinese' if ("chinese" in query.data) else 'Stops Name',
@@ -103,12 +115,12 @@ def checktime(bot, update):
     update_time = datetime.now().strftime('%H:%M:%S')
     text += "<i>[查詢時間: %s]</i>"%update_time if "CHINESE" in lang.upper() else\
 	        "<i>[Enquire Time: %s]</i>"%update_time
+    kb = [[InlineKeyboardButton('更新資料' if "CHINESE" in lang.upper() else 'Refresh',callback_data=query.data)],
+		[InlineKeyboardButton('重新查詢' if "CHINESE" in lang.upper() else 'Requery', callback_data='start')]]			
     bot.editMessageText(text=text,
 			chat_id=query.message.chat_id,
 			message_id=query.message.message_id,
-			reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(
-				'重新查詢' if "CHINESE" in lang.upper() else 'Refresh'
-				,callback_data=query.data)]]),
+			reply_markup=InlineKeyboardMarkup(kb),
 			parse_mode="HTML")			
 		
 @run_async
@@ -182,9 +194,8 @@ def sendlocation(bot, update, dir):
 
 	
 def main():
-    
     # Create the Updater and pass it your bot's token.
-    updater = Updater(TOKEN)
+    updater = Updater("token")
 
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
