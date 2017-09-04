@@ -113,7 +113,8 @@ def checktime(bot, update):
         else:
             text += "To %s\n"%element.get('@tram_dest_en')
         if arrive_in_second > 0:
-            text += "%d:%02d\n" % divmod(arrive_in_second, 60)
+            text += "於%d分%02d秒至\n" % divmod(arrive_in_second, 60)if "CHINESE" in lang.upper() else\
+                    "Arrive in %d min %02d sec\n" % divmod(arrive_in_second, 60)	
         else:
             text += "己至\n" if "CHINESE" in lang.upper() else "Arrived\n"
     update_time = datetime.now().strftime('%H:%M:%S')
@@ -199,7 +200,7 @@ def sendlocation(bot, update, dir):
 	
 def main():
     # Create the Updater and pass it your bot's token.
-    updater = Updater("token")
+    updater = Updater("")
 
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
