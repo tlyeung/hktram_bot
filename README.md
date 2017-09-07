@@ -9,7 +9,8 @@ Find your nearest tram stations and know the next tram arrivals for Hong Kong Tr
 
 ## /start: check arrivals and get route map
 
- ![query](https://user-images.githubusercontent.com/15364387/30145588-ca884aa8-93c4-11e7-9e71-8aba6e2aa8ce.png)
+![start_menu](https://user-images.githubusercontent.com/15364387/30145874-0dbdf0a0-93c7-11e7-80d0-980e7f5827cb.png)
+![query](https://user-images.githubusercontent.com/15364387/30145588-ca884aa8-93c4-11e7-9e71-8aba6e2aa8ce.png)
 
 ## /help: get help
 
