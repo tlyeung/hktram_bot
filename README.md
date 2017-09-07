@@ -1,4 +1,6 @@
-# Hong Kong Tramways(Ding Ding/香港電車/叮叮) Telegram Bot
+# Hong Kong Tramways Telegram Bot
+# (Ding Ding/香港電車/叮叮) 
+
 @hktram_bot
 
 <http://t.me/hktram_bot/>
