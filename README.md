@@ -1,7 +1,7 @@
 # hktram_bot
 @hktram_bot
 
-http://t.me/hktram_bot
+<http://t.me/hktram_bot/>
 
 Find your nearest tram stations and know the next tram arrivals for Hong Kong Tramways.
 
